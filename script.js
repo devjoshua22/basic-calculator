@@ -11,7 +11,7 @@ function appendValue(value){
 
 function calculate (){
 	try {
-		display.value = Math.round( eval(display.value))/10
+		display.value = eval(display.value)
 	} catch (error) {
 		display.value = 'Error'
 	}
