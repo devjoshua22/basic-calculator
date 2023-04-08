@@ -12,6 +12,7 @@ table {
     border: 1px seagreen solid;
 	border-top-right-radius: 4%;
 	border-top-left-radius: 4%;
+	box-shadow:8px 8px 40px -19px #333;
 }
 #display {
 	border-top-right-radius: 10%;
@@ -34,4 +35,5 @@ tr{
 }
 .buttons:hover{
 	background-color: rgb(127, 235, 174);
+	cursor: pointer;
 }
