@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculator.css">
-    <title>calculator</title>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
 </head>
 <body>
-     <div id="calculator">
-        <form >
-            <input type="text">
-        </form>
-     </div>
+	<div id="calculator">
+		<table border="1">
+			<tr >
+				<td colspan="4" id="display"><input type="text" id="input"></td>
+			</tr>
+			<div ></div>
+			<tr>
+				<td onclick="appendValue('1')" class="buttons">1</td>
+				<td onclick="appendValue('2')" class="buttons">2</td>
+				<td onclick="appendValue('3')" class="buttons">3</td>
+				<td onclick= "deleteInput()" class="buttons">&#8882;</td>
+			</tr>
+			<tr>
+				<td onclick="appendValue('4')" class="buttons">4</td>
+				<td onclick="appendValue('5')" class="buttons">5</td>
+				<td onclick="appendValue('6')" class="buttons">6</td>
+				<td onclick="clearInput()" class="buttons"> CE</td>
+			</tr>			
+			<tr>
+				<td onclick="appendValue('7')" class="buttons">7</td>
+				<td onclick="appendValue('8')" class="buttons">8</td>
+				<td onclick="appendValue('9')" class="buttons">9</td>
+				<td onclick="appendValue('*')" class="buttons">*</td>
+			</tr>			
+			<tr>
+				<td onclick="appendValue('.')" class="buttons">.</td>
+				<td onclick="appendValue('0')" class="buttons">0</td>
+				<td onclick="appendValue('00')" class="buttons">00</td>
+				<td onclick="appendValue('+')" class="buttons">+</td>
+			</tr>
+			<tr>
+				<td colspan="2" onclick="calculate()" class="buttons">=</td>
+				<td onclick="appendValue('/')" class="buttons">/</td>
+				<td onclick="appendValue('-')" class="buttons">-</td>
+			</tr>
+		</table>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html>

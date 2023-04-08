@@ -1,0 +1,37 @@
+#calculator{
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+table {
+	height: 310px;
+	width: 300px;
+	font-size: larger;
+	text-align: center;
+    border: 1px seagreen solid;
+	border-top-right-radius: 4%;
+	border-top-left-radius: 4%;
+}
+#display {
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
+}
+
+#input{
+	height: 70%;
+	width: 90%;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: right;
+	outline: none;
+	border: none;
+	background-color: #f8f6f4;
+}
+tr{
+	border: none;
+	background-color: #f8f6f4;	
+}
+.buttons:hover{
+	background-color: rgb(127, 235, 174);
+}
